@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget28"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/widget29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/INR"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="INR"
+            android:inputType="textCapSentences"
+            android:textSize="20sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/SEK"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:hint="SEK"
+            android:textSize="20sp" >
+        </EditText>
+
+        <Button
+            android:id="@+id/TodayRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/SEK"
+            android:layout_below="@+id/SEK"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector2"
+            android:text="Get Today&apos;s Rate"
+            android:textColor="#FFFFFF" >
+        </Button>
+
+        <EditText
+            android:id="@+id/Rate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Today&apos;s Rate"
+            android:textSize="20sp" >
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/INRtoSEK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INR to SEK" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/SEKtoINR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEK to INR" >
+            </RadioButton>
+
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/widget29"
+                android:layout_below="@+id/widget29"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector2"
+                android:text="Convert"
+                android:textColor="#FFFFFF" >
+            </Button>
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
